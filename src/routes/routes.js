@@ -8,10 +8,10 @@ const ProductsController = require('../controllers/products')
 // PUT - ATUALIZAR DADOS
 // DELETE - EXCLUIR DADOS
 
-router.get('/products', ProductsController.get)
+router.get('/products/:id?', ProductsController.get)
 //router.post('/products', ProductsController.post)
-//router.put('/clientes', ProductsController.put)
-//router.delete('/clientes', ProductsController.delete)
+//router.put('/products', ProductsController.put)
+//router.delete('/products', ProductsController.delete)
 
 
 module.exports = router
